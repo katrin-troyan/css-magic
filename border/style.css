@@ -1,7 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #dfddd8;
-  color: #333;
+  background-color: #202020;
+  color: #fcfbfb;
   width: 100%;
 }
 a {
@@ -20,39 +20,39 @@ a {
 }
 .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
+  color: white;
 }
 
 .cursor-box {
   width: 120px;
   height: 120px;
-  background-color: rgb(20, 40, 216);
+  background-color: rgb(216, 20, 190);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
-  border-radius: 8px;
 }
 
-.auto:hover {
-  cursor: auto;
+.square:hover {
+  border-radius: 30px;
 }
-.pointer:hover {
-  cursor: pointer;
+.circle:hover {
+  border-radius: 50%;
 }
-.crosshair:hover {
-  cursor: crosshair;
+.triangle:hover {
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
-.wait:hover {
-  cursor: wait;
+.drop:hover {
+  border-radius: 50% 50% 50% 0%;
 }
-.not-allowed:hover {
-  cursor: not-allowed;
+.rectangle:hover {
+  border-radius: 50% 20%/10% 40%;
 }
-.zoom-in:hover {
-  cursor: zoom-in;
+.leafShape:hover {
+  border-radius: 50% 0%;
 }
