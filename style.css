@@ -1,0 +1,27 @@
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #c7dfdf;
+  color: #333;
+  width: 100%;
+}
+.container {
+  max-width: 1168px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #ff6f61;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #ff3b2e;
+}

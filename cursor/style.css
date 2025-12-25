@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 200px;
+  font-family: sans-serif;
+}
+
+.cursor-box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(20, 40, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.auto:hover {
+  cursor: auto;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.crosshair:hover {
+  cursor: crosshair;
+}
+.wait:hover {
+  cursor: wait;
+}
+.not-allowed:hover {
+  cursor: not-allowed;
+}
+.zoom-in:hover {
+  cursor: zoom-in;
+}
