@@ -1,0 +1,82 @@
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #333;
+  color: #dfddd8;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.container {
+  max-width: 1168px;
+  padding: 20px 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.goBack {
+  font-weight: bold;
+  font-size: 16px;
+}
+.animation-container {
+  perspective: 800px; /* задає глибину 3D сцени */
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.cube {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d; /* зберігає 3D трансформації */
+  transform: translate(-50%, -50%);
+  animation: cubeRotate 8s infinite linear; /* обертання куба */
+}
+
+.cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 100, 100, 0.7);
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Розміщення граней куба */
+.cube-face.front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.cube-face.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.cube-face.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cube-face.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.cube-face.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.cube-face.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* Анімація обертання куба */
+@keyframes cubeRotate {
+  from {
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg);
+  }
+}
